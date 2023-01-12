@@ -67,13 +67,22 @@ main {
   }
 
   40% {
-    opacity: 1;
-    transform: translateY(0px);
+    opacity: 0;
+    transform: translateY(-10px);
   }
 
-  60% {
+  48% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
+  }
+
+  52% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(10px);
   }
 
   100% {
