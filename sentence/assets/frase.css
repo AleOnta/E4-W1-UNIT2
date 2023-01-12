@@ -42,33 +42,38 @@ main {
   color: #798c9a;
   position: absolute;
   opacity: 1;
-  bottom: 50px;
   left: 5px;
 }
 
 #first-shown {
   opacity: 0;
-  animation: wordDisplayer 5s ease-in 0s infinite;
+  animation: wordDisplayer 6s linear 0s infinite;
 }
 
 #second-shown {
   opacity: 0;
-  animation: wordDisplayer 5s ease-in 1.5s infinite;
+  animation: wordDisplayer 6s linear 2s infinite;
 }
 
 #third-shown {
   opacity: 0;
-  animation: wordDisplayer 5s ease-in 3s infinite;
+  animation: wordDisplayer 6s linear 4s infinite;
 }
 
 @keyframes wordDisplayer {
   0% {
+    transform: translateY(-100px);
     opacity: 0;
   }
 
-  50% {
+  40% {
     opacity: 1;
-    transform: translateY(50px);
+    transform: translateY(0px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 
   100% {
